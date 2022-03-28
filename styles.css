@@ -4,7 +4,17 @@ body {
     padding: 0px;
 }
 
-.navBar {
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.navBar{
     font-family: 'Times New Roman', Times, serif;
     background-color: maroon;
     text-align: center;
