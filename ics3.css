@@ -1,0 +1,37 @@
+
+body {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.navBar{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: maroon;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navBar .sections h2 {
+    display: inline;
+    font-size: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: lighter;
+}
+
+h1 {
+    text-align: center;
+}
