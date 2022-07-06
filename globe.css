@@ -8,7 +8,6 @@ body {
 #page {
   display: grid;
 }
-
 #chartdiv {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -55,3 +54,4 @@ a:hover {
   color: white;
   font-weight: lighter;
 }
+
