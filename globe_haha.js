@@ -39,6 +39,7 @@ polygonTemplate.fill = am4core.color("#aa002a"); //color of countries
 polygonTemplate.stroke = am4core.color("#adff2f"); //outline of countries
 polygonTemplate.strokeWidth = 0.5;
 polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+polygonTemplate.url = "https://en.wikipedia.org/wiki/{name}";
 
 var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
 graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
