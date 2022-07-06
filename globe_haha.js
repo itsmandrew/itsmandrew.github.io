@@ -35,8 +35,8 @@ polygonSeries.useGeodata = true;
 // Configure series
 var polygonTemplate = polygonSeries.mapPolygons.template;
 polygonTemplate.tooltipText = "{name}";
-polygonTemplate.fill = am4core.color("#73ac31"); //color of countries
-polygonTemplate.stroke = am4core.color("#000033");
+polygonTemplate.fill = am4core.color("#aa002a"); //color of countries
+polygonTemplate.stroke = am4core.color("#adff2f"); //outline of countries
 polygonTemplate.strokeWidth = 0.5;
 polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
 polygonTemplate.url = "https://www.datadrum.com/main.php?package={id}";
@@ -48,16 +48,16 @@ graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
 graticuleSeries.fitExtent = false;
 
 
-chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
+chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.08;
 chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
 
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
-hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
+hs.properties.fill = chart.colors.getIndex(9).brighten(-0.5);
 
 let animation;
 setTimeout(function(){
-  animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+  animation = chart.animate({property:"deltaLongitude", to:500000}, 20000000);
 }, 3000)
 
 chart.seriesContainer.events.on("down", function(){
