@@ -1,7 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    overflow-x: hidden;
-    margin: 0;
+    overflow: hidden;
     background-color: black;
   }
   
@@ -12,7 +11,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    height: 620px;
+    height: 610px;
   background-color: #101010;
   grid-area: 1 / 1;
   }
@@ -23,7 +22,7 @@ body {
   width: 100%;
   height: 200px;
   line-height: 22px;
-  font-size: 35px;
+  font-size: 38px;
   text-align: center;
   grid-area: 2 / 1;
 }
@@ -54,4 +53,3 @@ a:hover {
   color: white;
   font-weight: lighter;
 }
-
