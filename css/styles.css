@@ -17,6 +17,17 @@
     color: #4AF626;
 }
 
+.typing-about {
+    width: 13ch;
+    animation: typing 2s steps(13), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: #4AF626;
+}
+
 @keyframes typing {
 from {
     width: 0
