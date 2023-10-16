@@ -1,41 +1,282 @@
-<!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <title>Andrew's World</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-dark">
-            <div class="container px-4 px-lg-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse justify-content-center navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./static/2023_resume_august.pdf">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/itsmandrew/">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!doctype html>
+<html lang="en">
 
-        <!-- Page Content-->
-        <section id="body">
-          <div class="wrapper">
-            <div class="typing-demo">
-              Andrew Chang.
-            </div>
+<!--
+WRITTEN BY: Andrew Chang
+EMAIL: changa17@uci.edu
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew's World</title>
+
+  <!-- Bootstrap CSS (optional but can help with styling) -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+
+
+ </head>
+ 
+  <!-- Your Custom Stylesheet -->
+
+<!-- BODY STARTS HERE -->
+<body>
+
+  <!-- Hero Section -->
+  <div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class='element0'>changa17@uci.edu ~$ <span class="type1"></span></div>
+  </div>
+
+  <!-- Spacing -->
+  <div class="container-fluid d-flex flex-column " style="min-height: 10vh"> </div><!-- Spacing -->
+  
+  <!-- About -->
+  <div id=about class="container-fluid d-flex flex-column " style="min-height: 100vh">
+    <div class="container-fluid d-flex flex-column text-center"> <!-- Title -->
+      <p class="display-4 pb-3">About my <span class="type2 red"></span></p>
+    </div>
+
+    <div class="d-flex flex-wrap flex-row align-items-center justify-content-center ">
+
+      <div class="d-flex flex-column align-items-center justify-content-center half red">
+        <img src="static/IMG_3381.jpg" class="about-image" style="width:400px" alt="my being hella sexy">
+        <div class="d-flex flex-row align-items-center" style="padding-top: 3vh; padding-bottom: 3vh">
+          <a style="font-size: larger; color: #ff001e;" href="static/resume.pdf">this is my resume btw</a>
         </div>
-        </section>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
 
-    </body>
+      <div class="half" style="padding: 3vh">
+        <p class="h3 red">Who am I? </p>
+        <ul>
+          <li><p class="h6">My name is <strong>Andrew Chang</strong></p></li>
+          <li><p class="h6">I'm currently a 4th year Computer Science student at UCI</p></li>
+          <li><p class="h6">I'm from Diamond Bar, CA and was born in SoCal</p></li>
+        </ul>
+        <br>
+        <p class="h3 red">What are my skills?</p>
+          <ul>
+            <li><p class="h6">Python, C++, Java, JavaScript, TypeScript</p></li>
+            <li><p class="h6">Full Stack development and data engineering</p></li>
+            <li><p class="h6">Being 2 sexy</p></li>
+          </ul>
+        <br>
+        <p class="h3 red">What are my hobbies?</p>
+          <ul>
+            <li><p class="h6">Basketball</p></li>
+            <li><p class="h6">Gyming + powerlifting</p></li>
+            <li><p class="h6">Assault and battery</p></li>
+            <li><p class="h6">Eating new foods</p></li>
+          </ul>    
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <!-- Spacing -->
+  <div class="container-fluid d-flex flex-column " style="min-height: 10vh"> 
+  </div>
+
+
+  <!-- Experience -->
+
+  <div class="timeline" id="experience">
+		<div class="tl-container left-tl-container">
+		<img src="static/db.jpg" alt="diamond bar highscool logo">
+		<div class="text-box">
+			<h5>Diamond Bar High School</h5>
+			<small>2019 - 2020</small>
+			<p>Graduated at DBHS in 2020. I don't miss this place at all lol.</p>
+			<span class="left-tl-container-arrow"></span>
+		</div>
+	</div>
+
+	<div class="tl-container right-tl-container">
+		<img src="static/uci1.png" alt="uci main logo">
+		<div class="text-box">
+			<h5>University of California, Irvine</h5>
+			<small>2020 - 2021</small>
+			<p>Started at UCI in 2020. Expected graduation in the Fall 24'. Zot zot zot.</p>
+			<span class="right-tl-container-arrow"></span>
+		</div>
+	</div>
+
+	<div class="tl-container left-tl-container">
+		<img src="static/uci2.jpg" alt="petr dabbing">
+		<div class="text-box">
+			<h5>Undergrad Research @ UCI</h5>
+			<small>2023 - 2023</small>
+			<p>Worked on workflow-based analysis systems, specifically browser based GUI's and SQL queries.</p>
+			<span class="left-tl-container-arrow"></span>
+		</div>
+	</div>
+
+	<div class="tl-container right-tl-container">
+		<img src="static/spurs.jpg" alt="san antonio spurs logo">
+		<div class="text-box">
+			<h5>NBA - San Antonio Spurs</h5>
+			<small>2023 - 2024</small>
+			<p>Data engineer intern for the San Antonio Spurs in the Fall '23. Go Wemby! :D</p>
+			<span class="right-tl-container-arrow"></span>
+		</div>
+	</div>
+
+</div>
+
+  <!-- Spacing -->
+  <div class="container-fluid d-flex flex-column " style="min-height: 10vh"> 
+  </div>
+
+  <!-- Footer -->
+  <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #929fba"
+      id="contact"
+      >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Andrew Chang
+            </h6>
+            <p>
+              I sometimes like doing projects and sometimes don't. I want to make some money therefore I do projects. woohoo
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p>Los Angeles, CA 91765, USA</p>
+            <p>changa17@uci.edu</p>
+            <p>mandrew.c24@gmail.com</p>
+            <p> +1 (626)-251-8717</p>
+          </div>
+          
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998"
+               href="https://www.facebook.com/mandrewsenpai/"
+               role="button"
+               title="facebook button"
+               ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="https://twitter.com/KingJames"
+               role="button"
+                title="twitter button"
+               ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="https://www.google.com/"
+               role="button"
+               title="google button"
+               ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="https://www.instagram.com/itsmandrew/?hl=en"
+               role="button"
+               title="instagram button"
+               ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="https://www.linkedin.com/in/itsmandrew/"
+               role="button"
+               title="linkedin button"
+               ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="https://github.com/itsmandrew"
+               role="button"
+               title="github button"
+               ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >Andrew Chang</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- Typed.js library LOL kms -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    var typed = new Typed(".type1" , {
+      strings: ['npm install^1000 <br>`installing dependencies...` ^1000 <br>`Fetching from source...` <br>> Hello, this is Andrew :D <br><br><a href="javascript:void(0);" onclick="jumpToSection(\'about\')" class="purple">about</a>\t <a href="javascript:void(0);" onclick="jumpToSection(\'experience\')" class="purple">experience</a>\t <a href="javascript:void(0);" onclick="jumpToSection(\'contact\')" class="purple">contact</a>'],
+      typeSpeed: 30, // typing speed
+      backDelay: 750, // pause before backspacing
+      loop: false, // loop on or off (true or false)
+      loopCount: false, // number of loops, false = infinite
+    })
+    
+    var typed2 = new Typed(".type2" , {
+      strings: ['life', 'skills', 'hobbies'],
+      typeSpeed: 80, // typing speed
+      backSpeed: 80,
+      backDelay: 750, // pause before backspacing
+      loop: true, // loop on or off (true or false)
+      loopCount: false, // number of loops, false = infinite
+    })
+  
+    function jumpToSection(sectionId) {
+    let element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+
+
+  }
+
+  </script>
+
+</body>
 </html>
