@@ -54,39 +54,6 @@ a:hover {
     justify-content: center; 
 }
 
-
-
-/* Background colors */ 
-
-
-/* About  ---------------------------------------------------------*/ 
-.about-image {
-    max-width: 30vw;
-    width: 30vw;
-    min-width: 100px;
-    height: auto;
-    border-radius: 25px;
-}
-
-/* For desktops/laptops */
-@media (max-width: 379px) {
-    .element0 {
-        font-size: 0.8rem;
-    }
-    #about-my-title {
-        font-size: 0.8rem;
-    }
-}
-
-@media (min-width: 380px) and (max-width: 767px) {
-    .element0 {
-        font-size: 1.1rem;
-    }
-    #about-my-title {
-        font-size: 2rem;
-    }
-}
-
 /* For tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .element0 {
@@ -117,6 +84,24 @@ a:hover {
 
 .type1 {
     white-space: pre-wrap; /* Allows <br/> to be interpreted as line breaks */
+}
+
+
+
+/* About  ---------------------------------------------------------*/ 
+.about-image {
+    max-width: 30vw;
+    width: 30vw;
+    min-width: 100px;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* For mobile devices */
+@media (max-width: 576px) { /* This targets devices with a max-width of 576px, typically smartphones */
+    #about .display-4 { /* Targets the .display-4 class within the #about section */
+        font-size: 1.8rem; /* Adjusts the font size */
+    }
 }
 
 
