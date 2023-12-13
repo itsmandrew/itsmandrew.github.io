@@ -280,6 +280,17 @@ a:hover {
   }
 
 
+  /* Animation Section For Sliding  ---------------------------------------------------------*/ 
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-60%);
+    transition: all 3s;
+}
 
-  /* Footer Section  ---------------------------------------------------------*/ 
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

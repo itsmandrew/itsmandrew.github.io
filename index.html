@@ -3,7 +3,6 @@
 
 <!--
 WRITTEN BY: Andrew Chang
-EMAIL: changa17@uci.edu
 -->
 
 <head>
@@ -16,6 +15,7 @@ EMAIL: changa17@uci.edu
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="static/favicon.ico">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 
 
  </head>
@@ -31,10 +31,10 @@ EMAIL: changa17@uci.edu
   </div>
 
   <!-- Spacing -->
-  <div class="container-fluid d-flex flex-column " style="min-height: 10vh"> </div><!-- Spacing -->
+  <div class="container-fluid d-flex flex-column " style="min-height: 50vh"> </div><!-- Spacing -->
   
   <!-- About -->
-  <div id=about class="container-fluid d-flex flex-column " style="min-height: 100vh">
+  <div id=about class="container-fluid d-flex flex-column hidden" style="min-height: 100vh">
     <div class="container-fluid d-flex flex-column text-center"> <!-- Title -->
       <p class="display-4 pb-3" style="margin-bottom: 50px">About my <span class="type2 red"></span></p>
     </div>
@@ -76,7 +76,7 @@ EMAIL: changa17@uci.edu
   </div>
 
   <!-- Spacing -->
-  <div class="container-fluid d-flex flex-column " style="min-height: 10vh"> 
+  <div class="container-fluid d-flex flex-column " style="min-height: 50vh"> 
   </div>
 
 
@@ -247,7 +247,7 @@ EMAIL: changa17@uci.edu
   <!-- Typed.js library LOL kms -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-  <!-- Custom JS -->
+  <!-- Custom JS for Typed, sadly need this here -->
   <script>
     var typed = new Typed(".type1" , {
       strings: ['npm install^1000 <br>`installing dependencies...` ^1000 <br>`Fetching from source...` <br>> Hello, this is Andrew :D <br><br><a href="javascript:void(0);" onclick="jumpToSection(\'about\')" class="purple">about</a>\t <a href="javascript:void(0);" onclick="jumpToSection(\'experience\')" class="purple">experience</a>\t <a href="javascript:void(0);" onclick="jumpToSection(\'contact\')" class="purple">contact</a>'],
@@ -265,15 +265,6 @@ EMAIL: changa17@uci.edu
       loop: true, // loop on or off (true or false)
       loopCount: false, // number of loops, false = infinite
     })
-  
-    function jumpToSection(sectionId) {
-    let element = document.getElementById(sectionId);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
-
-
-  }
 
   </script>
 
