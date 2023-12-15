@@ -183,3 +183,33 @@ a:hover {
     filter: blur(0);
     transform: translateX(0);
 }
+
+/*    Footer stuff    */
+.social-btn-container {
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center; /* Centers the buttons vertically */
+}
+
+.social-btn {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  border-radius: 50%; /* Makes the buttons rounded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: white;
+}
+
+.social-btn-container .social-btn:hover {
+  background-color: #ffffff; /* Sets the button background to white on hover */
+  color: #000000; /* Sets the icon/text color to black (or any contrasting color) for visibility */
+}
+
+.social-btn-container .social-btn:hover i {
+  color: #000000;
+  text-decoration: none; /* Removes the underline on hover */
+  text-shadow: 0 0 5px white, 
+               0 0 10px white, 
+               0 0 15px white; /* Sets the color of the Font Awesome icon to black (or any contrasting color) on hover */
+}
