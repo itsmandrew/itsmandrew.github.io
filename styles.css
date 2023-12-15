@@ -166,14 +166,14 @@ a:hover {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-60%);
+    transform: translateX(-40%);
     transition: all 1.5s;
 }
 
 .hidden2 {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(100%);
+  transform: translateX(20%);
   transition: all 1.5s;
 }
 
