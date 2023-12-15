@@ -3,6 +3,8 @@
 /* Initial for the body ---------------------------------------------------------*/ 
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     background-color: #252b3b;
     color: #1EFF00;
@@ -47,12 +49,6 @@ a:hover {
 
 /* Hero Section  ---------------------------------------------------------*/ 
 
-.hero-section {
-    height: 100vh; /* Makes hero occupy full viewport height */
-    display: flex; /* Used to center the content */
-    align-items: center; /* Centers content vertically */
-    justify-content: center; 
-}
 
 /* For tablets */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -107,178 +103,63 @@ a:hover {
 
 /* Experience Section  ---------------------------------------------------------*/ 
 
-#timeline {
-    margin: 0;
-    padding: 0;
-    background-color: #3F0071;
+@media (max-width: 576px) { /* This targets devices with a max-width of 576px, typically smartphones */
+  #experience .display-4 { /* Targets the .display-4 class within the #experience section */
+      font-size: 1.8rem; /* Adjusts the font size */
+  }
 }
 
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .tl-container {
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    animation: movedown 1s linear forwards;
-    opacity: 0;
-  }
-
-  @keyframes movedown {
-    0% {
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-  }
-
-.tl-container:nth-child(1) {
-    animation-delay: 0s;
-  }
-.tl-container:nth-child(2) {
-    animation-delay: 1s;
-}
-.tl-container:nth-child(3) {
-    animation-delay: 2s;
-}
-.tl-container:nth-child(4) {
-    animation-delay: 3s;
+#experience-content {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+#experience-content ul {
+  list-style-type: disc;
+  font-size: small;
+  padding-left: 20px;
+  margin-bottom: 1em;
+  margin-left: 5px;
+  --tw-text-opacity: 1;
+  color: rgb(220 220 220 / var(--tw-text-opacity));
+}
 
-  .text-box {
-    padding: 20px 30px;
-    background: #fff;
-    position: relative;
-    border-radius: 6px;
-    font-size: 15px;
-  }
+#experience-content ul li{
+  margin-bottom: 4px;
+}
 
-  .left-tl-container {
-    left: 0;
-  }
+.text-secondary {
+  color: rgb(255, 255, 255);
+}
 
-  .right-tl-container {
-    left:50%;
-  }
+.timeline-with-icons {
+  border-left: 2px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
 
-  .tl-container img {
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
-  }
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
 
-  .right-tl-container img {
-    left: -20px;
-  }
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
 
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: #fff;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 4s linear forwards;
-    border-radius: 30%;
-  }
-
-  @keyframes moveline {
-    0% {
-        height: 0;
-    }
-
-    100% {
-        height: 100%;
-    }
-  }
-
-  .text-box h5 {
-    font-weight: 600;
-  }
-
-  .text-box small {
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-
-  .left-tl-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #fff;
-    right: -15px;
-
-  }
-
-  .right-tl-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #fff;
-    left: -15px;
-
-  }
-
-  @media screen and (max-width:600px) {
-    .timeline {
-        margin: 50px auto;
-    }
-    .timeline::after{
-        left: 31px;
-    }
-    .tl-container {
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 25px;
-    }
-
-    .text-box {
-        font-size: 13px;
-    }
-
-    .text-box small {
-        margin-bottom: 10px;
-    }
-
-    .right-tl-container {
-        left: 0;
-    }
-
-    .left-tl-container img, .right-tl-container img {
-        left: 10px;
-    }
-
-    .left-tl-container-arrow, .right-tl-container-arrow {
-        border-right: 15px solid #fff;
-        border-left: 0;
-        left: -15px;
-    }
-  }
-
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -57px;
+  background-color:  white;
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   /* Animation Section For Sliding  ---------------------------------------------------------*/ 
 
@@ -288,6 +169,14 @@ a:hover {
     transform: translateX(-60%);
     transition: all 1.5s;
 }
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1.5s;
+}
+
 
 .show {
     opacity: 1;

@@ -14,5 +14,5 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const slidingElements = document.querySelectorAll('.hidden');
+const slidingElements = document.querySelectorAll('.hidden, .hidden2');
 slidingElements.forEach((e1) => observer.observe(e1));
