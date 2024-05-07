@@ -42,8 +42,6 @@ If you'd like to run the website locally on your machine, please follow the step
 
     This will start a local development server. Open `http://localhost:3000` (or the appropriate port) in your browser to view the site.
 
-
-
 ## Contact Me
 
 For any further inquiries or potential collaborations, feel free to contact me at:
