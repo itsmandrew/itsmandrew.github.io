@@ -1,10 +1,24 @@
 
+html::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge, and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Ensure the content is still scrollable */
+html {
+  overflow-y: scroll;
+}
 /* Initial for the body ---------------------------------------------------------*/ 
 
 body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     background-color: #252b3b;
     color: #1EFF00;
