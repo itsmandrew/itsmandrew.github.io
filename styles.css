@@ -1,125 +1,117 @@
-
 html::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge, and Firefox */
 html {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Ensure the content is still scrollable */
 html {
   overflow-y: scroll;
 }
-/* Initial for the body ---------------------------------------------------------*/ 
+/* Initial for the body ---------------------------------------------------------*/
 
 body {
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: Monaco, Consolas, "Lucida Console", monospace;
-    background-color: #252b3b;
-    color: #1EFF00;
-    }
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  background-color: #252b3b;
+  color: #1eff00;
+}
 
 .purple {
-    color: #e100ff;
+  color: #e100ff;
 }
 
 .blue {
-    color: #001eff;
+  color: #001eff;
 }
 
 .red {
-    color:#ff001e;
+  color: #ff001e;
 }
 
 .nodisplay {
-    display: none;
+  display: none;
 }
 
-
 a {
-    text-decoration: none; /* Removes the underline */
+  text-decoration: none; /* Removes the underline */
 }
 
 a:hover {
-    color: #e100ff; /* Sets the link text color to blue on hover */
-    text-decoration: none; /* Removes the underline on hover */
-    text-shadow: 0 0 5px #e100ff, 
-                 0 0 10px #e100ff, 
-                 0 0 15px #e100ff; /* Creates a magenta glow effect based on the color #e100ff */
+  color: #e100ff; /* Sets the link text color to blue on hover */
+  text-decoration: none; /* Removes the underline on hover */
+  text-shadow: 0 0 5px #e100ff, 0 0 10px #e100ff, 0 0 15px #e100ff; /* Creates a magenta glow effect based on the color #e100ff */
 }
 
 .red a:hover {
-    color: white; /* Sets the link text color to blue on hover */
-    text-decoration: none; /* Removes the underline on hover */
-    text-shadow: 0 0 5px #ff001e, 
-                 0 0 10px #ff001e, 
-                 0 0 15px #ff001e; /* Creates a magenta glow effect based on the color #e100ff */
+  color: white; /* Sets the link text color to blue on hover */
+  text-decoration: none; /* Removes the underline on hover */
+  text-shadow: 0 0 5px #ff001e, 0 0 10px #ff001e, 0 0 15px #ff001e; /* Creates a magenta glow effect based on the color #e100ff */
 }
 
-/* Hero Section  ---------------------------------------------------------*/ 
-
+/* Hero Section  ---------------------------------------------------------*/
 
 /* For tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-    .element0 {
-        font-size: 1.3rem;
-    }
+  .element0 {
+    font-size: 1.3rem;
+  }
 }
 
 /* For desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .element0 {
-        font-size: 1.5rem;
-    }
+  .element0 {
+    font-size: 1.5rem;
+  }
 }
 
 /* For large desktops */
 @media (min-width: 1200px) {
-    .element0 {
-        font-size: 2rem;
-    }
+  .element0 {
+    font-size: 2rem;
+  }
 }
-
 
 .half {
-    width: 50%;
-    min-width: 400px;
+  width: 50%;
+  min-width: 400px;
 }
-
 
 .type1 {
-    white-space: pre-wrap; /* Allows <br/> to be interpreted as line breaks */
+  white-space: pre-wrap; /* Allows <br/> to be interpreted as line breaks */
 }
 
-
-
-/* About  ---------------------------------------------------------*/ 
+/* About  ---------------------------------------------------------*/
 .about-image {
-    max-width: 30vw;
-    width: 30vw;
-    min-width: 100px;
-    height: auto;
-    border-radius: 25px;
+  max-width: 30vw;
+  width: 30vw;
+  min-width: 100px;
+  height: auto;
+  border-radius: 25px;
 }
 
 /* For mobile devices */
-@media (max-width: 576px) { /* This targets devices with a max-width of 576px, typically smartphones */
-    #about .display-4 { /* Targets the .display-4 class within the #about section */
-        font-size: 1.8rem; /* Adjusts the font size */
-    }
+@media (max-width: 576px) {
+  /* This targets devices with a max-width of 576px, typically smartphones */
+  #about .display-4 {
+    /* Targets the .display-4 class within the #about section */
+    font-size: 1.8rem; /* Adjusts the font size */
+  }
 }
 
+/* Experience Section  ---------------------------------------------------------*/
 
-/* Experience Section  ---------------------------------------------------------*/ 
-
-@media (max-width: 576px) { /* This targets devices with a max-width of 576px, typically smartphones */
-  #experience .display-4 { /* Targets the .display-4 class within the #experience section */
-      font-size: 1.8rem; /* Adjusts the font size */
+@media (max-width: 576px) {
+  /* This targets devices with a max-width of 576px, typically smartphones */
+  #experience .display-4 {
+    /* Targets the .display-4 class within the #experience section */
+    font-size: 1.8rem; /* Adjusts the font size */
   }
 }
 
@@ -138,7 +130,7 @@ a:hover {
   color: rgb(220 220 220 / var(--tw-text-opacity));
 }
 
-#experience-content ul li{
+#experience-content ul li {
   margin-bottom: 4px;
 }
 
@@ -165,7 +157,7 @@ a:hover {
 .timeline-with-icons .timeline-icon {
   position: absolute;
   left: -57px;
-  background-color:  white;
+  background-color: white;
   color: hsl(217, 88.8%, 35.1%);
   border-radius: 50%;
   height: 33px;
@@ -175,27 +167,27 @@ a:hover {
   justify-content: center;
 }
 
-  /* Animation Section For Sliding  ---------------------------------------------------------*/ 
+/* Animation Section For Sliding  ---------------------------------------------------------*/
+.hidden,
+.hidden2 {
+  will-change: transform, opacity;
+}
 
 .hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-40%);
-    transition: all 1.5s;
+  opacity: 0;
+  transform: translateX(-40%);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
 .hidden2 {
   opacity: 0;
-  filter: blur(5px);
   transform: translateX(20%);
-  transition: all 1.5s;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
-
 .show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /*    Footer stuff    */
@@ -223,7 +215,5 @@ a:hover {
 .social-btn-container .social-btn:hover i {
   color: #000000;
   text-decoration: none; /* Removes the underline on hover */
-  text-shadow: 0 0 5px white, 
-               0 0 10px white, 
-               0 0 15px white; /* Sets the color of the Font Awesome icon to black (or any contrasting color) on hover */
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; /* Sets the color of the Font Awesome icon to black (or any contrasting color) on hover */
 }
